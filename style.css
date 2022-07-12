@@ -266,7 +266,7 @@ p{
    color:rgb(23, 2, 34);
   padding:2px 8px;
   font-weight:bold;
-  font-size:15.4px;
+  font-size:15.7px;
   
 } 
 strong{
@@ -287,6 +287,7 @@ strong{
 } 
 i{
   color:#f55;
+ line-height:30px;
 }
 #Read:hover{
   color:green;
