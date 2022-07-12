@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box  ;
+    font-family: 'PT Sans', sans-serif;
+   
+   }
+   body{
+    background-color: gainsboro;
+   }
+ 
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 55px;
+    width: 100%;
+    padding: 0px  80px;
+     align-items: center;
+     background: rgb(2,0,36);
+     /* background-color: #fff; */
+}
+nav a{
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    /* color: black; */
+    padding: 0px 34px;
+    position: relative;
+    text-decoration: none;
+     transition: 0.9s;
+}
+#con{
+    text-decoration: none;
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 12px;
+    font-weight: 400;
+     border-radius:4px;
+    background-color: rgb(8, 23, 181);
+}
+#logo{
+    color:white;
+    font-weight: bold;
+ 
+}
+#sp1{
+    color: crimson;
+}
+a:hover{
+    color: #f55;
+    transition: 500ms ease;
+}
+#con:hover{
+    background-color:#1685ed;
+    color: white;
+}
+#icon{
+  height: 40px;
+  width: 40px;
+  border-radius: 80px;
+  display: flex;
+  margin: 0;
+  background-color: #1685ed;
+  justify-content: center;
+  align-items: center;
+ border: 2px solid #f55;
+  background-color:rgb(2,0,36);
+}
+#icon img{
+  width: 100%;
+  height: 100%;
+  border-radius: 80px;
+ 
+  
+}
+ nav a::after{
+  position: absolute;
+  content: "";
+  width: 57%;
+  height: 3px;
+  top: 100%;
+  left: 25px;
+    
+  background:orange;
+
+  transition: transform 0.5s;
+  transform: scaleX(0);
+  transform-origin: right;
+ }
+ nav a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+  border-radius:50px;
+}
+/* =================box================================= */
+#box{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+ background-image: url("img/header-bg-2.png");
+    gap: 40px;
+   background-position:center;
+   background-size: cover;
+   background-repeat: no-repeat;
+
+    padding: 0px 10px;
+}
+#content{
+    height: 300px;
+    width: 60%;
+    /* background-color: rgb(50, 14, 14); */
+}
+#img{
+    height: 350px;
+    width: 30%;
+    /* background-color: rgb(223, 162, 162); */
+}
+ input{
+    position:  absolute; 
+     padding: 12px 10px;
+    width: 31%;
+    outline: none;
+    border: 2px solid black;
+    margin-left: 80px ;
+   
+    border-radius: 30px;
+   
+     }
+     input:focus{
+         background-color:white;
+         border: 2px solid green;
+     }
+     
+ button{
+    position: relative;
+     left: 46%;
+    margin:5px;
+    background-color: #f55f;
+    padding: 6px 37px;
+    font-weight: bold;
+    font-size: 16px;
+   
+    border-radius: 30px;
+   
+ }
+ button:hover{
+     background-color: crimson;
+     transition: 300ms ease;
+     color: white;
+ }
+ #child{
+   /* background-color: #fff; */
+ margin:60px 50px  22px 100px;
+
+ }
+ h3{
+     font-size: 2em;
+     color:white;
+ }
+ #h2{
+    font-size: 3em;
+    color: crimson;
+}
+h4{
+    font-size: 1.5em;
+   color:lavender;
+}
+#sp3{
+    color:lightblue;
+}
+.change_content::after {
+    content: "";
+    animation: changetext 8s infinite ;
+    transition: 400ms ease;
+    color:crimson;
+    text-transform: lowercase;
+  }
+  
+  @keyframes changetext {
+    0% {
+      content: "HTML";
+    }
+    20% {
+      content: "CSS";
+    }
+    35% {
+      content: "JAVA SCRIPT";
+    }
+    60% {
+      content: "REACT";
+    }
+    80% {
+      content: "MANGODB";
+    }
+    100% {
+      content: "NODE.JS";
+    }
+  }
+  #Aboutbox{
+    height: 480px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("img/header-bg-2.png");
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    padding: 0px 50px;
+    gap:80px
+  }
+  #aimg{
+    height: 340px;
+    width: 27%;
+    margin-left: 60px;
+    border-radius: 10px;
+ 
+  }
+  #acontent{
+    height: 450px;
+    width: 40%;
+    margin-left: 40px;
+    border-radius: 10px;
+     border: crimson 2px solid;
+    background-color: #f4f3f2c8;
+  }
+  #sp6{
+    color: whitesmoke;
+  }
+  #pic{
+    border:3px solid black;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+ 
+  
+  }
+  
+#me{
+  text-align: center;
+  background-color:rgb(10, 2, 37);
+  border-radius:5px;
+  font-size: 2em;
+  color: crimson;
+  padding: 0px 20px;
+  margin: 1px;
+  /* box-shadow: 0px 0px 2px 2px lightblue; */
+
+}
+#sp5{
+  color: crimson;
+}
+#dis{
+  padding:5px 8px; 
+  /* text-decoration: underline;
+  text-underline-offset: unset; */
+}
+p{
+  text-align: justify;
+   color:rgb(23, 2, 34);
+  padding:2px 8px;
+  font-weight:bold;
+  font-size:15.4px;
+  
+} 
+strong{
+  color:crimson;
+}
+#Read{
+  /* text-align: center; */
+  text-decoration: none;
+  background-color:crimson;
+  color: #fff;
+  font-weight: bold;
+  padding: 6px 12px;
+   margin-left: 140px;
+    line-height: 65px;
+    border: 2px solid black;
+  border-radius: 30px;
+  
+} 
+i{
+  color:#f55;
+}
+#Read:hover{
+  color:green;
+  background-color: #fff;
+ transition: 400ms ease;
+
+} 
+  /*==================servic===================  */
+  #service{
+    height: 350px;
+    margin-top:10px ;
+    width: 100%;
+    background-color: rgb(3, 43, 56);
+  }
+  #our{
+    text-align: center;
+    font-size: 2em;
+    color:white;
+    background-color: rgb(11, 2, 19);
+  }
+  #cart{
+  height: 300px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+  width: 100%;
+  gap: 40px;
+  }
+  .sp10{
+    color: yellow;
+  }
+  #cart1,#cart2,#cart3  {
+    width: 24%;
+    height: 260px;
+    border-radius:5px;
+    border: 2px solid rgb(10, 58, 10);
+    text-align: center;
+    box-shadow:  0px 0px 2px 2px rgb(254, 249, 249);
+    background-color: rgb(18, 13, 22);
+  }
+  #cart1,#cart2,#cart3{
+    position: relative;
+  }
+ 
+.one{
+ color: black;
+ position:absolute;
+ margin-top:-224.5px;
+ width: 100%;
+  height: 70%;
+overflow: hidden;
+ background: rgb(1, 6, 34);
+ display: none;
+ 
+  }
+  .over:hover + .one{
+    background-color: rgba(170, 163, 163, 0.904);
+    display: block;
+    
+    border-color: rgba(12, 86, 7, 0.663);
+  }
+
+  .head{
+    background-color:	#FFA07A;
+    border-radius:3px;
+    color: rgb(21, 20, 20);
+    font-size: bold;
+    font-size: 1.6em;
+  }
+.img_bo{
+  
+  height: 180px;
+  width: 100%;
+}
+.img_bo img{
+  width: 100%;
+  height: 100%;
+  
+}
+.over{
+  text-decoration: none;
+  font-size: 16px;
+ line-height:45px;
+ background-color:skyblue;
+  border-radius: 20px;
+  color:black;
+ border: 2px solid black;
+  padding: 3px 15px;
+  
+  font-weight: bold;
+}
+
+ 
+ 
+ #h6{
+  text-align: center;
+  margin:20px 40px;
+  font-size: 40px;
+  color: white;
+  
+ }
+ #sp8{
+   color: crimson;
+ }
+ #main-boxc{
+   height: 300px;
+   width: 100%;
+   background-image:linear-gradient(rgba(19, 19, 19, 0.9),rgba(0,0,0,0.9)), url('img/pexels-洋榤-郭-2399840.jpg'); 
+   margin-top:10px ;
+   background-position:center;
+   background-size: cover;
+   
+   background-repeat: no-repeat;
+ }
+ #arvindpro{
+   background-color: rgb(2, 2, 22);
+   color:rgb(255, 255, 255);
+   text-align: center;
+   font-size: 30px;
+   border: 2px solid #f55;
+ }
+ .social{
+   height:44px;
+   
+   width: 100%;
+   /* background-color: blue; */
+   display: flex;
+   justify-content: center;
+   gap: 14px;
+   margin-top:20px;
+
+ }
+ 
+ #vi{
+   text-decoration: none;
+   font-size: 20px;
+   color: crimson;
+   transition: 400ms ease;
+ }
+ #vi:hover{
+ 
+  color: green;
+ }
+ 
+ .so-m{
+   height: 30px;
+   width:30px;
+  background-color: #fff;
+  border-radius: 80px;
+ }
+ .var{
+   width: 40px;
+   height: 40px;
+   border-radius: 80px;
+   
+ }
+ footer{
+   height: 40px;
+   width: 100%;
+   display: flex;
+   padding:0px 20px;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 16px;
+   font-weight: bold;
+   background-color: #0b4e56;
+  }
+  #textc{
+   color:yellow;
+   
+  }
+  #textb{
+    color:crimson;
+  }
+ marquee{
+   border:2px solid rgb(182, 134, 134);
+  color:white;
+   font-weight: bold;
+   font-size: 25px;
+    
+   /* background-color:rgb(128, 128, 128); */
+   padding: 0px 40%;
+   
+   font-weight: bolder;
+ }
